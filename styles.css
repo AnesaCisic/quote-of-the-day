@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.im-fell-english-sc-regular {
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.im-fell-french-canon-regular {
+    font-family: "IM Fell French Canon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lovers-quarrel-regular {
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url("/assets/old-paper.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-box {
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    text-align: center;
+}
+
+.quote-box h1 {
+    font-size: 32px;
+    margin-bottom: 80px;
+    position: relative;
+    font-weight: 700;
+}
+
+.quote-box h1::after {
+    content: "";
+    width: 3px;
+    height: 60px;
+    border-radius: 3px;
+    background: #303030;
+    position: absolute;
+    bottom: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+    font-weight: 500;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    font-size: 40px;
+    display: block;
+    margin-top: 16px;
+    float: right;
+    position: relative;
+}
+
+.quote-box div {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.quote-box button:hover {
+    background-color: #fff;
+}
+
+.quote-box button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
